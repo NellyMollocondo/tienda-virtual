@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Metadatos -->
+        <meta charset="UTF-8" />
+        <meta name="author" content="Nelly" />
+        <meta name="description" content="Catálogo de productos de boutique" />
+        <meta name="keywords" content="moda, vestidos, boutique" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Titulo -->
+        <title>Fashion boutique | Datos de facturación</title>
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="./images/favicon.png" />
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="./css/bootstrap.css" />
+        <!-- CSS -->
+        <link rel="stylesheet" href="./css/style.css" />
+        <!-- Fuentes -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+        <!-- Iconos -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
+        <!-- Add the slick-theme.css if you want default styling -->
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+        <!-- Add the slick-theme.css if you want default styling -->
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+      </head>
+<body>
+    <header class="container-fluid p-0">
+        <div class="row">
+          <div class="col col-lg-12">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  
+              <div class="container-fluid">
+      
+                <a class="navbar-brand" href="./index.html">
+                  <img src="./images/favicon.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                  Fashion Boutique</a>
+      
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+      
+                <div class="collapse navbar-collapse pt-2" id="navbarSupportedContent">
+      
+                  <form class="d-flex w-75" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Buscar productos" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Buscar</button>
+                  </form>
+      
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0 flex-row">
+                    <li class="nav-item p-2">
+                      <a class="nav-link" href="./carrito.html">
+                        <i class="bi bi-cart-fill position-relative">
+                          <!-- <span class="position-absolute bottom-50 start-50 badge rounded-circle bg-danger">
+                          0                     
+                          </span> -->
+                        </i>
+                      </a>
+                    </li>
+                    <li class="nav-item p-2 dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <i class="bi bi-person-fill"></i>
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Mi cuenta</a></li>
+                        <li><hr class="dropdown-divider"></li>                      
+                        <li><a class="dropdown-item" href="#">Mis pedidos</a></li>
+                      </ul>
+                    </li>
+                  </ul>                  
+                </div>      
+              </div>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+      <main class="container-fluid">
+
+        <div class="container mt-5 mb-5">
+        <h2>
+            DATOS DE FACTURACIÓN
+        </h2>
+        <form class="row g-3 needs-validation" id="formDatosFacturacion" novalidate>
+            
+            <div class="col-md-6">
+                <label for="inputNombre" class="form-label">Nombre *</label>
+                <input type="text" class="form-control" id="inputNombre" required>
+                <div class="invalid-feedback">
+                  El nombre es obligatorio
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label for="inputApellido" class="form-label">Apellido *</label>
+                <input type="text" class="form-control" id="inputApellido" required>
+                <div class="invalid-feedback">
+                  El apellido es obligatorio.
+                </div>
+            </div>
+            <div class="col-md-6">
+              <label for="inputCorreoElectronico" class="form-label">Correo Electrónico *</label>
+              <input type="email" class="form-control" id="inputCorreoElectronico" required>
+              <div class="invalid-feedback">
+                El correo electrónico es obligatorio.
+              </div>
+            </div>
+            <div class="col-md-6">
+                <label for="pais" class="form-label">Región *</label>
+                <input type="text" class="form-control" id="pais" value="Lima" required>
+                <div class="invalid-feedback">
+                  La región es obligatoria.
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label for="distrito" class="form-label">Distrito *</label>
+                <select class="form-select" aria-label="Default select example" required>
+                    <option selected>Elige una opción</option>
+                    <option value="Ancón">Ancón</option>
+                    <option value="Ate">Ate</option>
+                    <option value="Barranco">Barranco</option>
+                    <option value="Breña">Breña</option>
+                    <option value="Carabayllo">Carabayllo</option>
+                    <option value="Cercado de Lima">Cercado de Lima</option>
+                    <option value="Chaclacayo">Chaclacayo</option>
+                    <option value="Chorrillos">Chorrillos</option>
+                    <option value="Cieneguilla">Cieneguilla</option>
+                    <option value="Comas">Comas</option>
+                    <option value="El agustino">El agustino</option>
+                    <option value="Independencia">Independencia</option>
+                    <option value="Jesús maría">Jesús maría</option>
+                    <option value="La molina">La molina</option>
+                    <option value="La victoria">La victoria</option>
+                    <option value="Lince">Lince</option>
+                    <option value="Los olivos">Los olivos</option>
+                    <option value="Lurigancho">Lurigancho</option>
+                    <option value="Lurín">Lurín</option>
+                    <option value="Magdalena del mar">Magdalena del mar</option>
+                    <option value="Miraflores">Miraflores</option>
+                    <option value="Pachacámac">Pachacámac</option>
+                    <option value="Pucusana">Pucusana</option>
+                    <option value="Pueblo libre">Pueblo libre</option>
+                    <option value="Puente piedra">Puente piedra</option>
+                    <option value="Punta hermosa">Punta hermosa</option>
+                    <option value="Punta negra">Punta negra</option>
+                    <option value="Rímac">Rímac</option>
+                    <option value="San bartolo">San bartolo</option>
+                    <option value="San borja">San borja</option>
+                    <option value="San isidro">San isidro</option>
+                    <option value="San Juan de Lurigancho">San Juan de Lurigancho</option>
+                    <option value="San Juan de Miraflores">San Juan de Miraflores</option>
+                    <option value="San Luis">San Luis</option>
+                    <option value="San Martin de Porres">San Martin de Porres</option>
+                    <option value="San Miguel">San Miguel</option>
+                    <option value="Santa Anita">Santa Anita</option>
+                    <option value="Santa María del Mar">Santa María del Mar</option>
+                    <option value="Santa Rosa">Santa Rosa</option>
+                    <option value="Santiago de Surco">Santiago de Surco</option>
+                    <option value="Surquillo">Surquillo</option>
+                    <option value="Villa el Salvador">Villa el Salvador</option>
+                    <option value="Villa Maria del Triunfo">Villa Maria del Triunfo</option>
+
+                    
+                </select>
+            </div>
+            <div class="col-12">
+              <label for="inputDireccion" class="form-label">Dirección *</label>
+              <input type="text" class="form-control" id="inputDireccion" placeholder="Nombre de la calle y número de casa" required>
+              <div class="invalid-feedback">
+                La dirección es obligatoria.
+              </div>
+            </div>
+            <div class="col-12">
+              <label for="inputTelefono" class="form-label">Teléfono *</label>
+              <input type="tel" class="form-control" id="inputTelefono" required>
+              <div class="invalid-feedback">
+                El teléfono es obligatorio.
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label for="inputDocumentoIdentidad" class="form-label">Seleccione un tipo de documento de identidad *</label>
+              <select id="inputDocumentoIdentidad" class="form-select" required>
+                <option value="dni" selected>Documento Nacional de Identidad</option>
+                <option value="ce">Carnet de Extranjería</option>
+                <option value="pas">Pasaporte</option>
+              </select>
+            </div>
+            <div class="col-md-6">
+              <label for="inputNumeroDocumento" class="form-label">Número de documento*</label>
+              <input type="text" class="form-control" id="inputNumeroDocumento" required>
+              <div class="invalid-feedback">
+                El número de documento es obligatorio.
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                  Suscríbete a nuestro boletín
+                </label>
+              </div>
+            </div>
+            
+            <div class="col-auto">
+                <a type="submit"id="btnRealizarPedido" class="btn btn-primary mb-3" href="./pago.html">Realizar el pedido</a>
+            </div>
+          </form>
+        </div>
+
+      </main>
+
+      <footer class="container-fluid bg-body-tertiary text-center text-lg-start">
+        <!-- Autor -->
+        <div class="text-center p-3">Desarrollado por Nelly , 2023</div>
+      </footer>
+
+      <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+      <script src="./js/bootstrap.js"></script>
+      <script src="./scripts/productos.js"></script>
+      <script src="./scripts/detalle-productos.js"></script>
+      <script src="./scripts/nodos.js"></script>
+      <script src="./scripts/main.js"></script>
+      <script>
+        $("#btnRealizarPedido").click(function(event) {
+          const form = $("#formDatosFacturacion");
+    
+          if(form[0].checkValidity() === false){
+            event.preventDefault();
+            event.stopPropagation();
+          } 
+    
+          form.addClass('was-validated');
+        });
+      </script>
+
+</body>
+</html>

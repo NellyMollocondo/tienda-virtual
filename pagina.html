@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Metadatos -->
+    <meta charset="UTF-8" />
+    <meta name="author" content="Nelly" />
+    <meta name="description" content="Catálogo de productos de boutique" />
+    <meta name="keywords" content="moda, vestidos, boutique" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Titulo -->
+    <title>Fashion boutique | Catálogo de productos</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./images/favicon.png" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+  </head>
+
+  <body class="position-relative" onload="agregarCatalogo()">
+
+    <!-- Botón de WhatsApp -->
+    <a href="https://wa.me/937163368?text=Hola" target="_blank">
+      <img
+        id="whatsapp"
+        src="./images/whatsapp.png"
+        alt="Acceso a WhatsApp"
+        width="60"
+        height="60"
+      />
+    </a>
+
+    <!-- Encabezado -->
+
+    <header class="container-fluid p-0">
+      <div class="row">
+        <div class="col col-lg-12">
+          <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">    
+              <a class="navbar-brand" href="./pagina.html">
+                <img src="./images/favicon.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                Fashion Boutique</a>    
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>    
+              <div class="collapse navbar-collapse pt-2" id="navbarSupportedContent">    
+                <form class="d-flex w-75" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar productos" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>    
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 flex-row">
+                  <li class="nav-item p-2">
+                    <a class="nav-link" href="./carrito.html">
+                      <i class="bi bi-cart-fill position-relative">
+                        <!-- <span class="position-absolute bottom-50 start-50 badge rounded-circle bg-danger">
+                        0                    
+                        </span> -->
+                      </i>
+                    </a>
+                  </li>
+                  <li class="nav-item p-2 dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="bi bi-person-fill"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Mi cuenta</a></li>
+                      <li><hr class="dropdown-divider"></li>                      
+                      <li><a class="dropdown-item" href="#">Mis pedidos</a></li>
+                    </ul>
+                  </li>
+                </ul>                
+              </div>    
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <hr class="m-0">
+
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./images/carrusel/sale-1.JPG" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./images/carrusel/sale-2.JPG" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./images/carrusel/sale-3.JPG" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./images/carrusel/sale-4.JPG" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./images/carrusel/sale-5.JPG" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <hr>
+
+    <!-- Contenido principal -->
+    <main class="container-fluid">
+
+      <!-- Titulo -->
+      <div
+        class="container-fluid d-flex align-items-center justify-content-start titulo"
+      >
+        <h1>Catálogo de productos</h1>
+      </div>
+
+      <!-- Catalogo de productos-->
+      <div class="container h-auto">
+        <div class="row" id="row"></div>
+      </div>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="container-fluid bg-body-tertiary text-center text-lg-start">
+      <!-- Autor -->
+      <div class="text-center p-3">Desarrollado por Nelly , 2023</div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <script src="./scripts/productos.js"></script>
+    <script src="./scripts/detalle-productos.js"></script>
+    <script src="./scripts/nodos.js"></script>
+    <script src="./scripts/main.js"></script>
+    <script src="./scripts/navigation.js"></script>
+    <!-- carrusel -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    
+    <script>
+      $('.slider-nav').slick({
+			slidesToShow: 3,
+			slidesToScroll: 1,
+			autoplay: true,
+			autoplaySpeed: 2000,
+			dots: true,
+			focusOnSelect: true
+		});
+
+    $(document).ready(function () {
+      $('[data-bs-toggle="tooltip"]').tooltip();
+    });
+    </script>
+  </body>
+</html>

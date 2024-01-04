@@ -1,0 +1,135 @@
+/* Variables */
+:root {
+    --green: #65c4b9;
+    --ligth-brown: #A67E5B;
+    --font: 'Questrial', sans-serif;
+}
+
+/* Estilos para todos los elementos */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+/* Icono de WhatsApp */
+#whatsapp {
+    width: 60px;
+    border-radius: 32px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1;
+}
+
+/* Cuerpo */
+body {
+    font-family: var(--font);
+    font-size: 1em;
+}
+
+.dropdown-menu[data-bs-popper]{
+    right: 0;
+    left: auto;
+}
+.navbar-nav>:first-child{
+    width: 40px;
+}
+/* SLICK CAROUSEL */
+div.carousel{
+    background-color: gray;
+}
+
+.carousel-item img{
+    width: 320px;
+    height: 320px;
+}
+.container-shopping-cart{
+    height: calc(90vh - 56px);
+}
+/* Formulario */
+.contenido-formulario {
+    height: calc(90vh - 56px);
+}
+
+/* Titulo */
+.titulo{
+    height: 7vh;    
+    font-size: 1rem; 
+    margin-bottom: 15px;
+    background: var(--green);
+    color: white;
+}
+
+/* Producto */
+.producto {
+    border-radius: 5px;
+    margin-bottom: 30px;
+    padding: 0;
+}
+
+.producto:hover {
+    box-shadow: 0px 0px 15px 0px #C8CEC4;
+}
+
+.descripcion {
+    padding: 5px;
+    font-size: 0.8rem;
+}
+
+.descripcion p {
+    margin-bottom: 0;
+}
+
+.descripcion>h2 {
+    margin-bottom: 0;
+    font-size: .8em;
+    opacity: .7;
+}
+
+.descripcion p:hover a{
+    color: var(--green);
+    font-weight: 400;
+}
+
+.descripcion p:nth-child(2n){
+    text-decoration:line-through;
+}
+
+.descripcion p:last-child{
+    font-weight: 700;
+}
+
+/* Lista de productos añadidos al carrito de compras */
+.productoLista {
+    padding: 15px;
+    margin: 20px;
+    border: 1px solid var(--green);
+}
+
+.productoLista p:first-child {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--ligth-brown);
+}
+
+.productoLista p:last-child {
+    font-weight: 600;
+}
+
+/* Modal */
+.modal .modal-body {
+    padding: 0;
+}
+
+/* Pie de pagina */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
