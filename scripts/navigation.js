@@ -1,8 +1,8 @@
-if ( location.pathname === '/index.html' ){
+if ( location.pathname === '/tienda-virtual/index.html' ){
     inicioPagina();
 }
 
-if ( location.pathname === '/login.html') {
+if ( location.pathname === '/tienda-virtual/login.html') {
     btnSubmit.addEventListener('click', validarLogin);
 }
 
@@ -10,10 +10,10 @@ if ( location.pathname === '/login.html') {
 //     cantidadProductosCarrito.textContent = calcularCantidadTotal();
 // }
 
-if(location.pathname === '/carrito.html') {
+if(location.pathname === '/tienda-virtual/carrito.html') {
     paginaCarrito();
 }
 
-if(location.pathname === '/detalle.html') {
+if(location.pathname === '/tienda-virtual/detalle.html') {
     agregarDetalleProducto(localStorage.getItem('idProducto'));
 }
