@@ -15,6 +15,9 @@ function inicioPagina() {
     agregarCatalogo();
 }
 
+//Cantidad de productos en el menu de navegacion
+document.querySelector('.cart--quantity').textContent = calcularCantidadTotal();
+
 // Función para agregar el catalogo a la web
 function agregarCatalogo() {
     productos.forEach(
@@ -106,6 +109,23 @@ function mostrarModal() {
     modalEntrada.show();
 }
 
+//Funcion para buscar producto
+
+function buscarMostrarProducto(){
+    const productosPorBusqueda = productos.filter((producto)=>producto.nombre.toLowerCase().includes(inputBuscar.value.toLowerCase()))    ;
+    const cantidadProductosPorBusqueda = productos.filter((producto)=>producto.nombre.toLowerCase().includes(inputBuscar.value.toLowerCase())).length;
+
+    if (!cantidadProductosPorBusqueda) {
+        alert('No se encontraron productos');
+        
+    } else {
+        filaCatalogoProd.innerHTML = '';
+        productosPorBusqueda.forEach(
+        ({ id, imagen, marca, nombre, precio, descuento }) => crearProducto(id, imagen, marca, nombre, precio, descuento));
+    }
+    
+    
+}
 //validacion de login
 
 function validarLogin() {
@@ -453,7 +473,7 @@ function renderizarCarrito() {
     contenedorBotonFinalizarCompra.append(enlaceBotonFinalizarCompra);
 
     const contenedorBotonSeguirComprando = document.createElement('div');
-    contenedorBotonSeguirComprando.classList.add('col-5', 'btn', 'btn-outline-success', 'text-center', 'align-items-center', 'm-2');
+    contenedorBotonSeguirComprando.classList.add('col-6', 'btn', 'btn-outline-success', 'text-center', 'align-items-center','m-1');
     const enlaceBotonSeguirComprando = document.createElement('a');
     enlaceBotonSeguirComprando.setAttribute('href', location.origin + '/pagina.html');
     enlaceBotonSeguirComprando.textContent = 'SEGUIR COMPRANDO';

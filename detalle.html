@@ -30,68 +30,57 @@
   </head>
 
   <body>
-    <header class="container-fluid p-0">
-      <div class="row">
-        <div class="col col-lg-12">
-          <nav class="navbar navbar-expand-lg bg-body-tertiary">
-
-            <div class="container-fluid">
-
-              <a class="navbar-brand" href="./index.html">
-                <img src="./images/favicon.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-                Fashion Boutique</a>
-
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-
-              <div class="collapse navbar-collapse pt-2" id="navbarSupportedContent">
-
-                <form class="d-flex w-75" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Buscar productos" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Buscar</button>
-                </form>
-
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 flex-row">
-                  <li class="nav-item p-2">
-                    <a class="nav-link" href="#"><i class="bi bi-car-front-fill"></i></a>
+    <header>
+      <!-- Barra de navegacion -->
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  
+        <div class="container-fluid">
+  
+          <a class="navbar-brand" href="./index.html">
+            <img src="./images/favicon.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+            Fashion Boutique</a>
+  
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <div class="collapse navbar-collapse pt-2" id="navbarSupportedContent">
+  
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 flex-row">
+              <li class="nav-item p-2">
+                <a class="nav-link disabled" aria-disabled="true"><i class="bi bi-car-front-fill"></i></a>
+              </li>         
+              <li class="nav-item p-2">
+                <a class="nav-link position-relative" href="./carrito.html" id="verCarrito">
+                  <i class="bi bi-cart-fill position-relative">
+                    <span class="position-absolute bottom-50 start-50 badge rounded-circle cart--quantity">
+                    0                    
+                    </span> 
+                  </i>                
+                </a>
+              </li>
+              <li class="nav-item p-2 dropdown">
+                <a class="nav-link dropdown-toggle active" aria-current="page" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  <i class="bi bi-person-fill"></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" aria-current="true" href="./login.html">Iniciar sesión</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
                   </li>
-                  <li class="nav-item p-2">
-                    <a class="nav-link" href="./carrito.html">
-                      <i class="bi bi-cart-fill position-relative">
-                        <!-- <span class="position-absolute bottom-50 start-50 badge rounded-circle bg-danger">
-                        0                     
-                        </span> -->
-                      </i>
-                    </a>
+                  <li><a class="dropdown-item" href="./create-account.html">Crear cuenta</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
                   </li>
-                  <li class="nav-item p-2 dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                      aria-expanded="false">
-                      <i class="bi bi-person-fill"></i>
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="./login.html">Iniciar sesión</a></li>
-                      <li>
-                        <hr class="dropdown-divider">
-                      </li>
-                      <li><a class="dropdown-item" href="./create-account.html">Crear cuenta</a></li>
-                      <li>
-                        <hr class="dropdown-divider">
-                      </li>
-                      <li><a class="dropdown-item" href="#">Mis pedidos</a></li>
-                    </ul>
-                  </li>
+                  <li><a class="dropdown-item disabled" aria-disabled="true" href="#">Mis pedidos</a></li>
                 </ul>
-
-              </div>
-
-            </div>
-          </nav>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
+      </nav>
     </header>
 
     <main class="container-fluid p-5">

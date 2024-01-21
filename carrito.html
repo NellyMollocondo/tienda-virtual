@@ -15,6 +15,8 @@
         <link rel="stylesheet" href="./css/bootstrap.css" />
         <!-- CSS -->
         <link rel="stylesheet" href="./css/style.css" />
+        <!--Responsive-->
+        <link rel="stylesheet" href="./css/tablet.css" media="(min-width:992px)">
         <!-- Fuentes -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,10 +29,9 @@
         <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
       </head>
 <body>
-    <header class="container-fluid p-0">
-        <div class="row">
-          <div class="col col-lg-12">
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <header class="container-fluid p-0">   
+
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
     
               <div class="container-fluid">
     
@@ -45,23 +46,18 @@
                 </button>
     
                 <div class="collapse navbar-collapse pt-2" id="navbarSupportedContent">
-    
-                  <form class="d-flex w-75" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Buscar productos" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Buscar</button>
-                  </form>
-    
+                         
                   <ul class="navbar-nav me-auto mb-2 mb-lg-0 flex-row">
                     <li class="nav-item p-2">
-                      <a class="nav-link" href="#"><i class="bi bi-car-front-fill"></i></a>
+                      <a class="nav-link disabled" aria-disabled="true" href="#"><i class="bi bi-car-front-fill"></i></a>
                     </li>
                     <li class="nav-item p-2">
-                      <a class="nav-link" href="./carrito.html">
+                      <a class="nav-link position-relative" href="./carrito.html" id="verCarrito">
                         <i class="bi bi-cart-fill position-relative">
-                          <!-- <span id="cantidadProductosCarrito" class="position-absolute bottom-50 start-50 badge rounded-circle bg-danger">
-                            0
-                          </span> -->
-                        </i>
+                          <span class="position-absolute bottom-50 start-50 badge rounded-circle cart--quantity">
+                          0                    
+                          </span> 
+                        </i>                
                       </a>
                     </li>
                     <li class="nav-item p-2 dropdown">
@@ -78,7 +74,7 @@
                         <li>
                           <hr class="dropdown-divider">
                         </li>
-                        <li><a class="dropdown-item" href="#">Mis pedidos</a></li>
+                        <li><a class="dropdown-item disabled" aria-disabled="true" href="#">Mis pedidos</a></li>
                       </ul>
                     </li>
                   </ul>
@@ -87,9 +83,7 @@
     
     
               </div>
-            </nav>
-          </div>
-        </div>
+      </nav>
     </header>
     
     <!-- Contenido principal -->
@@ -101,7 +95,7 @@
     </div>
 
     <!-- Carrito de compras-->
-    <div class="container h-auto">
+    <div class="container h-auto text-center">
       <div class="row" id="contenedorCarritoPrincipal">
 
       </div>

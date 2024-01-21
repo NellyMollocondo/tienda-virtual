@@ -12,9 +12,11 @@
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="./images/favicon.png" />
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link rel="stylesheet" href="./css/bootstrap.css"/>
     <!-- CSS -->
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/style.css"/>
+    <!--Responsive-->
+    <link rel="stylesheet" href="./css/tablet.css" media="(min-width:992px)">
     <!-- Fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -41,49 +43,44 @@
     </a>
 
     <!-- Encabezado -->
-
     <header class="container-fluid p-0">
-      <div class="row">
-        <div class="col col-lg-12">
-          <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">    
-              <a class="navbar-brand" href="./pagina.html">
-                <img src="./images/favicon.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-                Fashion Boutique</a>    
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>    
-              <div class="collapse navbar-collapse pt-2" id="navbarSupportedContent">    
-                <form class="d-flex w-75" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Buscar productos" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Buscar</button>
-                </form>    
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 flex-row">
-                  <li class="nav-item p-2">
-                    <a class="nav-link" href="./carrito.html">
-                      <i class="bi bi-cart-fill position-relative">
-                        <!-- <span class="position-absolute bottom-50 start-50 badge rounded-circle bg-danger">
-                        0                    
-                        </span> -->
-                      </i>
-                    </a>
-                  </li>
-                  <li class="nav-item p-2 dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <i class="bi bi-person-fill"></i>
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Mi cuenta</a></li>
-                      <li><hr class="dropdown-divider"></li>                      
-                      <li><a class="dropdown-item" href="#">Mis pedidos</a></li>
-                    </ul>
-                  </li>
-                </ul>                
-              </div>    
-            </div>
-          </nav>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./images/favicon.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+            Fashion Boutique</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse mt-2" id="navbarSupportedContent">
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" id="inputBuscar" type="search" placeholder="Buscar productos" aria-label="Search">
+              <button class="btn btn-outline-success" id="btnBuscar" type="button">Buscar</button>
+            </form>
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 flex-row">
+              <li class="nav-item p-2">
+                <a class="nav-link position-relative" href="./carrito.html" id="verCarrito">
+                  <i class="bi bi-cart-fill position-relative">
+                    <span class="position-absolute bottom-50 start-50 badge rounded-circle cart--quantity">
+                    0                    
+                    </span> 
+                  </i>                
+                </a>
+              </li>
+              <li class="nav-item p-2 dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="bi bi-person-fill"></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item disabled" aria-disabled="true" href="#">Mi cuenta</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item disabled" aria-disabled="true" href="#">Mis pedidos</a></li>
+                </ul>
+              </li>            
+            </ul>          
+          </div>
         </div>
-      </div>
+      </nav>
     </header>
 
     <hr class="m-0">
@@ -98,19 +95,19 @@
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="./images/carrusel/sale-1.JPG" class="d-block w-100" alt="...">
+          <img src="./images/carrusel/sale-1.jpg" class="d-block" alt="...">
         </div>
         <div class="carousel-item">
-          <img src="./images/carrusel/sale-2.JPG" class="d-block w-100" alt="...">
+          <img src="./images/carrusel/sale-2.jpg" class="d-block" alt="...">
         </div>
         <div class="carousel-item">
-          <img src="./images/carrusel/sale-3.JPG" class="d-block w-100" alt="...">
+          <img src="./images/carrusel/sale-3.jpg" class="d-block" alt="...">
         </div>
         <div class="carousel-item">
-          <img src="./images/carrusel/sale-4.JPG" class="d-block w-100" alt="...">
+          <img src="./images/carrusel/sale-4.jpg" class="d-block" alt="...">
         </div>
         <div class="carousel-item">
-          <img src="./images/carrusel/sale-5.JPG" class="d-block w-100" alt="...">
+          <img src="./images/carrusel/sale-5.jpg" class="d-block" alt="...">
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -121,7 +118,7 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
-    </div>
+    </div>    
 
     <hr>
 
@@ -147,7 +144,7 @@
       <div class="text-center p-3">Desarrollado por Nelly , 2023</div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="./js/bootstrap.js"></script>
     <script src="./scripts/productos.js"></script>
@@ -155,22 +152,5 @@
     <script src="./scripts/nodos.js"></script>
     <script src="./scripts/main.js"></script>
     <script src="./scripts/navigation.js"></script>
-    <!-- carrusel -->
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    
-    <script>
-      $('.slider-nav').slick({
-			slidesToShow: 3,
-			slidesToScroll: 1,
-			autoplay: true,
-			autoplaySpeed: 2000,
-			dots: true,
-			focusOnSelect: true
-		});
-
-    $(document).ready(function () {
-      $('[data-bs-toggle="tooltip"]').tooltip();
-    });
-    </script>
   </body>
 </html>

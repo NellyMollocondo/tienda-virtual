@@ -32,6 +32,7 @@ body {
     font-size: 1em;
 }
 
+/*header*/
 .dropdown-menu[data-bs-popper]{
     right: 0;
     left: auto;
@@ -39,20 +40,24 @@ body {
 .navbar-nav>:first-child{
     width: 40px;
 }
-/* SLICK CAROUSEL */
+.cart--quantity{
+    background-color: var(--green);
+    text-align: center;
+}
+/* CAROUSEL */
 div.carousel{
     background-color: gray;
 }
 
 .carousel-item img{
-    width: 320px;
+    width: 100%;
     height: 320px;
 }
 .container-shopping-cart{
-    height: calc(90vh - 56px);
+    min-height: calc(90vh - 56px);
 }
 /* Formulario */
-.contenido-formulario {
+.contenido-formulario--login {
     height: calc(90vh - 56px);
 }
 
@@ -104,6 +109,13 @@ div.carousel{
     font-weight: 700;
 }
 
+/* carrito de compras */
+#contenedorCarritoPrincipal{
+    font-size: 0.8em;
+}
+.container .btn-outline-success{
+    font-size: 0.8em;
+}
 /* Lista de productos añadidos al carrito de compras */
 .productoLista {
     padding: 15px;
@@ -119,6 +131,11 @@ div.carousel{
 
 .productoLista p:last-child {
     font-weight: 600;
+}
+
+/* pago */
+.container-main--pay{
+    height: 90vh;
 }
 
 /* Modal */

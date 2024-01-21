@@ -43,20 +43,15 @@
                 </button>
       
                 <div class="collapse navbar-collapse pt-2" id="navbarSupportedContent">
-      
-                  <form class="d-flex w-75" role="search">
-                      <input class="form-control me-2" type="search" placeholder="Buscar productos" aria-label="Search">
-                      <button class="btn btn-outline-success" type="submit">Buscar</button>
-                  </form>
-      
+                              
                   <ul class="navbar-nav me-auto mb-2 mb-lg-0 flex-row">
                     <li class="nav-item p-2">
-                      <a class="nav-link" href="./carrito.html">
+                      <a class="nav-link position-relative" href="./carrito.html" id="verCarrito">
                         <i class="bi bi-cart-fill position-relative">
-                          <!-- <span class="position-absolute bottom-50 start-50 badge rounded-circle bg-danger">
-                          0                     
-                          </span> -->
-                        </i>
+                          <span class="position-absolute bottom-50 start-50 badge rounded-circle cart--quantity">
+                          0                    
+                          </span> 
+                        </i>                
                       </a>
                     </li>
                     <li class="nav-item p-2 dropdown">
@@ -64,9 +59,9 @@
                           <i class="bi bi-person-fill"></i>
                       </a>
                       <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Mi cuenta</a></li>
+                        <li><a class="dropdown-item disabled" aria-disabled="true" href="#">Mi cuenta</a></li>
                         <li><hr class="dropdown-divider"></li>                      
-                        <li><a class="dropdown-item" href="#">Mis pedidos</a></li>
+                        <li><a class="dropdown-item disabled" aria-disabled="true" href="#">Mis pedidos</a></li>
                       </ul>
                     </li>
                   </ul>                  

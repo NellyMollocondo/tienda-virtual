@@ -16,6 +16,8 @@
   <link rel="stylesheet" href="./css/bootstrap.css" />
   <!-- CSS -->
   <link rel="stylesheet" href="./css/style.css" />
+  <!--Responsive-->
+  <link rel="stylesheet" href="./css/tablet.css" media="(min-width:992px)">
   <!-- Fuentes -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -50,10 +52,16 @@
 
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 flex-row">
             <li class="nav-item p-2">
-              <a class="nav-link"  href="#"><i class="bi bi-car-front-fill"></i></a>
+              <a class="nav-link disabled" aria-disabled="true"  href="#"><i class="bi bi-car-front-fill"></i></a>
             </li>
             <li class="nav-item p-2">
-              <a class="nav-link" href="#"><i class="bi bi-cart-fill"></i></a>
+              <a class="nav-link position-relative" href="./carrito.html" id="verCarrito">
+                <i class="bi bi-cart-fill position-relative">
+                  <span class="position-absolute bottom-50 start-50 badge rounded-circle cart--quantity">
+                  0                    
+                  </span> 
+                </i>                
+              </a>
             </li>
             <li class="nav-item p-2 dropdown">
               <a class="nav-link dropdown-toggle active" aria-current="page" href="#" role="button" data-bs-toggle="dropdown"
@@ -65,11 +73,11 @@
                 <li>
                   <hr class="dropdown-divider">
                 </li>
-                <li><a class="dropdown-item" href="./form.html">Crear cuenta</a></li>
+                <li><a class="dropdown-item active" aria-current="true" href="./form.html">Crear cuenta</a></li>
                 <li>
                   <hr class="dropdown-divider">
                 </li>
-                <li><a class="dropdown-item" href="#">Mis pedidos</a></li>
+                <li><a class="dropdown-item disabled" aria-disabled="true" href="#">Mis pedidos</a></li>
               </ul>
             </li>
           </ul>
@@ -82,7 +90,7 @@
   </header>
 
   <!-- Contenido principal -->
-  <main class="contenido-formulario">
+  <main class="contenido-formulario--create-account">
     <!-- Titulo -->
     <div class="container-fluid d-flex align-items-center justify-content-start titulo">
       <h1>Crear cuenta</h1>

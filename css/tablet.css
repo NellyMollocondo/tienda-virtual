@@ -1,0 +1,23 @@
+.carousel-item>img{
+    width: 600px;
+    margin: 0 auto;
+}
+
+/* login */
+.contenido-formulario--login {
+    height: calc(90vh - 80px);
+}
+/* create-account */
+.contenido-formulario--create-account{
+    height: calc(90vh - 80px);
+}
+
+/* carrito de compras */
+.container-shopping-cart{
+    height: calc(90vh - 80px);
+}
+
+#contenedorCarritoPrincipal{
+    font-size: 1em;
+}
+
