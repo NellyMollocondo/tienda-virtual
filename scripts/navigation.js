@@ -1,4 +1,4 @@
-if ( location.pathname.endsWith('/index.html')){
+if ( location.pathname.endsWith('/index.html') || location.pathname.endsWith('/')){
     inicioPagina();
     btnBuscar.addEventListener('click',buscarMostrarProducto);
 }
