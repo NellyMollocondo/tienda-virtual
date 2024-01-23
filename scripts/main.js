@@ -142,7 +142,7 @@ function validarLogin() {
     } else {
         console.log('Login validado');
         localStorage.setItem('usuario', JSON.stringify(usuarioFiltrado));
-        location.href = location.origin + '/pagina.html';
+        location.href = '/pagina.html';
     }
 }
 
