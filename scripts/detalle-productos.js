@@ -11,7 +11,7 @@ const detalleProductos = [
                     {"talla": "L",
                     "cantidad": 0}],
         "cantidad": 2,
-        "rutaImagen": "../images/products/mujer-vestido-verde.jpg",
+        "rutaImagen": "./images/products/mujer-vestido-verde.jpg",
         "descripcion": `Vestido verde con rayas blancas, en tela.`,
         "categoria": 'vestidos',
     },
@@ -27,7 +27,7 @@ const detalleProductos = [
                     {"talla": "L",
                     "cantidad": 0}],
         "cantidad": 7,
-        "rutaImagen": "../images/products/short-beige.jpg",
+        "rutaImagen": "./images/products/short-beige.jpg",
         "descripcion": `Short beige, perfecto para este clima caluroso`,
         "categoria": 'short',
     },
@@ -43,7 +43,7 @@ const detalleProductos = [
                     {"talla": "L",
                     "cantidad": 0}],
         "cantidad": 7,
-        "rutaImagen": "../images/products/vestido-negro.jpg",
+        "rutaImagen": "./images/products/vestido-negro.jpg",
         "descripcion": `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium, omnis?
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat autem iste voluptate fugiat, nulla nisi
         praesentium impedit totam amet adipisci vel eos laborum voluptates aspernatur ad hic? Quos aspernatur
@@ -67,7 +67,7 @@ const detalleProductos = [
                     {"talla": "L",
                     "cantidad": 0}],
         "cantidad": 2,
-        "rutaImagen": "../images/products/vestido-primavera.jpg",
+        "rutaImagen": "./images/products/vestido-primavera.jpg",
         "descripcion": `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium, omnis?
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat autem iste voluptate fugiat, nulla nisi
         praesentium impedit totam amet adipisci vel eos laborum voluptates aspernatur ad hic? Quos aspernatur
@@ -91,7 +91,7 @@ const detalleProductos = [
                     {"talla": "L",
                     "cantidad": 0}],
         "cantidad": 2,
-        "rutaImagen": "../images/products/blusa-verano.jpg",
+        "rutaImagen": "./images/products/blusa-verano.jpg",
         "descripcion": `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium, omnis?
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat autem iste voluptate fugiat, nulla nisi
         praesentium impedit totam amet adipisci vel eos laborum voluptates aspernatur ad hic? Quos aspernatur
@@ -115,7 +115,7 @@ const detalleProductos = [
                     {"talla": "L",
                     "cantidad": 0}],
         "cantidad": 2,
-        "rutaImagen": "../images/products/pantalon-blanco.jpg",
+        "rutaImagen": "./images/products/pantalon-blanco.jpg",
         "descripcion": `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium, omnis?
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat autem iste voluptate fugiat, nulla nisi
         praesentium impedit totam amet adipisci vel eos laborum voluptates aspernatur ad hic? Quos aspernatur
@@ -139,7 +139,7 @@ const detalleProductos = [
                     {"talla": "L",
                     "cantidad": 0}],
         "cantidad": 2,
-        "rutaImagen": "../images/products/polo-blanco.jpg",
+        "rutaImagen": "./images/products/polo-blanco.jpg",
         "descripcion": `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium, omnis?
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat autem iste voluptate fugiat, nulla nisi
         praesentium impedit totam amet adipisci vel eos laborum voluptates aspernatur ad hic? Quos aspernatur
@@ -164,7 +164,7 @@ const detalleProductos = [
                     {"talla": "L",
                     "cantidad": 0}],
         "cantidad": 2,
-        "rutaImagen": "../images/products/vestido-amarillo-brillante.jpg",
+        "rutaImagen": "./images/products/vestido-amarillo-brillante.jpg",
         "descripcion": `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium, omnis?
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat autem iste voluptate fugiat, nulla nisi
         praesentium impedit totam amet adipisci vel eos laborum voluptates aspernatur ad hic? Quos aspernatur
@@ -188,7 +188,7 @@ const detalleProductos = [
                     {"talla": "L",
                     "cantidad": 0}],
         "cantidad": 2,
-        "rutaImagen": "../images/products/vestido-azul.jpg",
+        "rutaImagen": "./images/products/vestido-azul.jpg",
         "descripcion": `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium, omnis?
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat autem iste voluptate fugiat, nulla nisi
         praesentium impedit totam amet adipisci vel eos laborum voluptates aspernatur ad hic? Quos aspernatur
@@ -212,7 +212,7 @@ const detalleProductos = [
                     {"talla": "L",
                     "cantidad": 0}],
         "cantidad": 2,
-        "rutaImagen": "../images/products/vestido-decorado-flores.jpg",
+        "rutaImagen": "./images/products/vestido-decorado-flores.jpg",
         "descripcion": `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium, omnis?
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat autem iste voluptate fugiat, nulla nisi
         praesentium impedit totam amet adipisci vel eos laborum voluptates aspernatur ad hic? Quos aspernatur
@@ -236,7 +236,7 @@ const detalleProductos = [
                     {"talla": "L",
                     "cantidad": 0}],
         "cantidad": 2,
-        "rutaImagen": "../images/products/vestido-rosa.jpg",
+        "rutaImagen": "./images/products/vestido-rosa.jpg",
         "descripcion": `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium, omnis?
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat autem iste voluptate fugiat, nulla nisi
         praesentium impedit totam amet adipisci vel eos laborum voluptates aspernatur ad hic? Quos aspernatur
@@ -260,7 +260,7 @@ const detalleProductos = [
                     {"talla": "L",
                     "cantidad": 0}],
         "cantidad": 2,
-        "rutaImagen": "../images/products/vestido-verano.jpg",
+        "rutaImagen": "./images/products/vestido-verano.jpg",
         "descripcion": `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium, omnis?
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat autem iste voluptate fugiat, nulla nisi
         praesentium impedit totam amet adipisci vel eos laborum voluptates aspernatur ad hic? Quos aspernatur
