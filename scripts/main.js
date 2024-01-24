@@ -463,7 +463,7 @@ function renderizarCarrito() {
         if( !JSON.parse(localStorage.getItem('usuario')) ) {
             alert('Debe iniciar sesión o crear una cuenta');
         } else {
-            location.href = '../datos-facturacion.html';
+            location.href = './datos-facturacion.html';
         }
         console.log(calcularTotal());
         console.log('finalizar compra')})
