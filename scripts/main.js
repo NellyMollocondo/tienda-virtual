@@ -59,7 +59,7 @@ function crearProducto( id, imagePath, brand, name, price, discount ) {
     const enlaceDetalleDesdeProducto = document.createElement("a");
     const contenidoProducto = document.createTextNode(name);
     enlaceDetalleDesdeProducto.append(contenidoProducto);
-    enlaceDetalleDesdeProducto.setAttribute('href', '../detalle.html');
+    enlaceDetalleDesdeProducto.setAttribute('href', './detalle.html');
     producto.appendChild(enlaceDetalleDesdeProducto);
 
     // Precio original
